@@ -1,0 +1,152 @@
+body{
+    padding-bottom: 100px;
+    height: 5000px;
+}
+
+h2{
+    color: red;
+    font-size: 30px;
+}
+
+h3{
+    color: rgb(53, 53, 255);
+    font-size: 20px;
+}
+/* クラスで指定 */
+.green-font{
+    color: green;
+    font-size: 20px;
+}
+
+.important{
+    font-weight: bold;
+}
+/* 子孫で指定 */
+.contents p{
+    font-size: 18px;
+}
+
+/* 直属の子孫要素だけ変更 */
+.div-contents>p{
+    color: red;
+}
+
+/* 様々なプロパティを使ってみる */
+.property{
+    font-size: 2em;/*２倍の大きさ*/
+    color: rgb(129, 6, 163);
+    font-weight: normal;/*元々の太さ*/
+    font-family: serif,sans-serif;/*字体を設定*/
+}
+
+.box{
+    width: 500px;/*横幅*/
+    height: 200px;/*高さ*/
+    padding: 12px 20px 30px 40px;/*内側の余白(左から上右下左で付く)*/
+    border: 10px solid black;/*ボーダー*/
+    margin: 12px 20px 30px 40px;/*外側の余白*/
+    box-sizing: border-box;/*余白も含めwidthやheightが指定される*/
+}
+
+.text{
+    height: 100px;
+    /* line-height: 50%;行の高さ */
+    text-align: center;/*水平方向に文字を配置*/
+    background-color: rgb(245, 148, 148);/*背景色*/
+}
+.hellow{
+    font-size: 50px;
+    text-decoration: underline;/*文字の装飾*/
+    letter-spacing: 10px;/*文字の間隔*/
+}
+.dairy{
+    vertical-align: bottom;/*垂直方向に文字をそろえる*/
+}
+
+.bg-image{
+    width: 100%;
+    height:500px;
+    border: solid 3px black;
+    background-color: antiquewhite;
+    background-image: url("../img/test.png");/*背景画像*/
+    background-size: contain;/*縦横比そのままに枠内最大で納める*/
+    /* background-repeat: no-repeat;画像を繰り返し表示するか */
+    background-attachment: fixed;/*スクロールしても画像を固定させるかどうか*/
+}
+
+.float{
+    margin-top: 100px;
+    display: flex;/*横縦に自由に並び変えられる*/
+    justify-content: space-around;/*水平に右端や左端、色々と配置する*/
+}
+.box1{
+    background-color: red;
+    /* float: left;横並びにする */
+
+}
+.box2{
+    background-color: blue;
+    /* float: left; */
+}
+.box3{
+    background-color: green;
+    /* clear: both;/*float解除 */
+}
+
+.flex-height{
+    height: 300px;/*縦に配置するときは高さを指定する*/
+    margin-top: 100px;
+    display: flex; 
+    flex-direction: column;/*縦に並ばせる*/
+    /* align-items: center;縦に対してどう配置するか */
+    justify-content: space-between;/*縦並びの時は縦に対してどう配置するか*/
+}
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;/*はみ出した要素を２行目に配置する*/
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.flex-wrap .box1{
+    width: 400px;
+    height: 400px;
+}
+.flex-wrap .box2{
+    width: 400px;
+    height: 400px;
+}
+.flex-wrap .box3{
+    width: 400px;
+    height: 400px;
+}
+
+.position{
+    height: 200px;
+    background-color: rgb(233, 255, 233);
+    border: solid 2px black;
+    position: fixed;/*スクロールしても付いてくる*/
+    bottom: 0;/*画面下にぴったりくっつく*/
+    right: 0;
+    z-index: 1;/*数値が大きい方が全面に来る*/
+}
+.position2{
+    height: 200px;
+    background-color: rgb(233, 255, 233);
+    border: solid 2px black;
+}
+.p-box1{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+}
+.p-box2{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+}
+.p-box3{
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+}

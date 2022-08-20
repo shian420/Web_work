@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSSの練習</title>
+  <!-- ここでstyle.cssを読み込みます -->
+<link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+<!-- ここにHTMLを書いていきます -->
+<header></header>
+
+<h2>これはh2です</h2>
+<h3>これはh3です</h3>
+
+<!-- クラスを使った指定 -->
+<h2 class="green-font">緑色のh2</h2>
+<p class="important">タイトル</p>
+
+<!-- 子孫要素の指定 -->
+<article class="contents">
+<p>子孫となるpです</p>
+<p>子孫となるpです</p>
+</article>
+
+<!-- 直属の子孫要素だけ指定 -->
+<div class="div-contents">
+    <p>このpの色だけ変えたい</p>
+    <div>
+        <p>ここは変えない</p>
+        <p>ここは変えない</p>
+    </div>
+</div>
+
+<!-- 様々なプロパティを使う -->
+<div class="box">
+<p class="property">Hellow World</p>
+</div>
+
+<div class="text">
+    <span class="hellow">Hellow World</span>
+    <span class="dairy">DairyTrial</span>
+</div>
+
+<div class="bg-image"></div>
+
+<div class="float">
+    <div class="box1">A</div>
+    <div class="box2">B</div>
+    <div class="box3">C</div>
+</div>
+
+<div class="flex-height">
+    <div class="box1">A</div>
+    <div class="box2">B</div>
+    <div class="box3">C</div>
+</div>
+
+<div class="flex-wrap">
+    <div class="box1">A</div>
+    <div class="box2">B</div>
+    <div class="box3">C</div>
+</div>
+
+<div class="position">
+    <div class="p-box1">
+        <div class="p-box2">要素Ａ</div>
+    </div>
+</div>
+<div class="position2">
+    <div class="p-box1">
+        <div class="p-box3">要素Ｂ</div>
+    </div>
+</div>
+
+</body>
+</html>
