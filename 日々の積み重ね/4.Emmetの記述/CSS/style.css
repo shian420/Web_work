@@ -1,0 +1,50 @@
+/* 学習内容
+・Google Chromeデベロッパーツールの使い方
+・Emmetの紹介 */
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+h2{
+    color: rgb(8 0 252);
+    font-size: 36px;
+}
+
+img{
+    width: 300px;
+    height: auto;
+}
+
+/*マウスを乗せたときに起動する*/
+img:hover{
+    opacity: 0.1;/*透明度１が不透明*/
+}
+
+a{
+    color: rgb(75, 75, 188);
+    display: block;
+}
+/* リンクの上にマウスが置かれたときに色を少しだけ薄くする */
+a:hover {
+    opacity: 0.5;
+}
+
+/* Emmetを使って記述 */
+p{
+    background: #000;/* bg#000 */
+    color: #fff;/* c#fff */
+    font-size: 16px;/* fz16 */
+    display: inline-block;/* dib */
+    margin-bottom: 32px;/* mb32 */
+    padding: 8px 12px 8px 12px;/* p8-12-8-12 */
+    width: 150px;/* w150 */
+    padding: 10px;/* p10 */
+    box-shadow: 0 0 3px 0 #000;/* bsh0-0-3-0#000 */
+    border-radius: 4px;/* bdrs4 */
+    position: relative;/* psr */
+    position: absolute;/* psa */
+    text-align: center;/* tac */
+    transform:rotate(x) ;/* tf */
+    transition: 3s;/* trs */
+}
