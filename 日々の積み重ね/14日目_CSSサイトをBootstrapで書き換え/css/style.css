@@ -1,0 +1,82 @@
+body{
+    color: black;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* -----------
+トップ
+------------- */
+
+.top{
+    background-image: url(../img/main-vsual-nontitle.png);
+    background-size: cover;
+}
+
+/* ------------
+コース
+------------- */
+.course{
+    background-color: #e3fcf4;
+}
+
+/* ---------------
+ボタン
+-------------- */
+
+.btn-submit{
+    background-color: #ec6d64;
+}
+
+.btn-submit:hover{
+    opacity: 0.7;
+}
+
+/* -----------
+フッター
+----------- */
+.copyright{
+    font-size: 12px;
+}
+
+/* ---------------
+スマホ用
+--------------- */
+@media only screen and (max-width:767px){
+.section-title{
+    font-size: 24px;
+}
+
+p{
+    font-size: 14px;
+}
+
+/* -------------
+トップ
+--------------- */
+.top-title{
+    font-size: 32px;
+}
+
+.top-sub-title{
+    font-size: 14px;
+}
+
+/* ------------
+フォーム
+------------- */
+input[type="email"], input[type="text"]{
+    width: 100%;
+}
+
+/* -------------
+フッター
+------------- */
+.copyright{
+    margin: 0 auto;
+}
+
+
+
+
+}
