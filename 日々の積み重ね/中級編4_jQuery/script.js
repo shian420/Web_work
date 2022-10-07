@@ -22,18 +22,19 @@ $(function(){
 
     $('#button').click(function(){
         $('#service-title').text('クリックされた');
+
     });
 
     $('#service-title').hover(
         function(){
             $('#service-title').css('color','orange');
-            $('#register').slideUp();
+            $('#register').slideDown();
             $('#button').fadeIn();
 
         },
         function(){
             $('#service-title').css('color','black');
-            $('#register').slideDown();
+            $('#register').slideUp();
             $('#button').fadeOut();
         }
     );
