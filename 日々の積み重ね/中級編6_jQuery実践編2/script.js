@@ -31,7 +31,9 @@ $(function(){
         $('.scroll-btn').click(function(){
             $('body,html').animate({scrollTop:0} ,500);
         });
-
+        var h = $('.modal-img').height();
+       
+        console.log(h);
 
         $('#open-begin').click(function(){
             $('#modal-overlay').fadeIn('slow');
