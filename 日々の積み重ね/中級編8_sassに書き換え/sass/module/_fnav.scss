@@ -1,0 +1,13 @@
+@use "../mixin/mq" as mq;
+
+.copyright{
+    font-size: 12px;
+    float: right;
+
+    @include mq.mq(){
+        font-size: 10px;
+        float: none;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,49 @@
+@use "../setting/config" as var;
+@use "../mixin/mq";
+
+body{
+    color: var.$base-font-color;
+    font-family: var.$base-font-family;
+    line-height: var.$base-line-height;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color:var.$base-font-color;
+
+    &:hover{
+        opacity: var.$base-opacity;
+    }
+}
+
+.scroll-btn{
+    display: inline-block;
+    position: fixed;
+    bottom:30px;
+    right: 30px;
+    z-index: 10;
+    padding: 40px 30px;
+    font-size: var.$base-font-size;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: yellow;
+}
+
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+
+    @include mq.mq(){
+        content: none;
+    }
+}
+
+
+

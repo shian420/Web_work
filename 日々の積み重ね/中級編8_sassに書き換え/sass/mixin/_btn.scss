@@ -1,0 +1,12 @@
+@use "../setting/config" as var;
+
+@mixin btn($btn-text-color,$btn-bg-color) {
+    padding: 20px 60px;
+    display: inline-block;
+    background-color:$btn-bg-color;
+    color: $btn-text-color;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+}

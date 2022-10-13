@@ -1,0 +1,33 @@
+@charset "UTF-8";
+.top {
+  background-image: url(../img/main-vsual-nontitle.png);
+  background-size: cover; /*表示領域いっぱいに表示*/
+  padding: 80px 0;
+}
+@media screen and (max-width: 767px) {
+  .top {
+    padding: 120px 0;
+  }
+}
+
+.top-title {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .top-title {
+    font-size: 32px;
+  }
+}
+
+.top-subtitle {
+  font-size: 18px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .top-subtitle {
+    font-size: 14px;
+  }
+}

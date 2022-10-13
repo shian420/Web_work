@@ -1,0 +1,7 @@
+@use "../setting/config" as var;
+
+footer{
+    background-color:var.$base-font-color;
+    color: white;
+    padding: var.$header-footer-padding-tb 0;
+}

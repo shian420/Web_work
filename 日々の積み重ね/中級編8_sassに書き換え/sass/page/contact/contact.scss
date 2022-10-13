@@ -1,0 +1,31 @@
+@use "../../setting/config" as var;
+@use "../../mixin/input-text";
+@use "../../mixin/btn";
+@use "../../mixin/mq" as mq;
+
+.contact-message{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="email"], input[type="text"]{
+    @include input-text.input-text();
+
+    @include mq.mq(){
+        width: 100%;
+    }
+}
+
+.btn{
+    @include btn.btn(var.$btn-text-color,var.$btn-bg-color);
+    &:hover{
+        opacity: var.$base-opacity;
+        cursor: pointer;
+    }
+}
+
+.btn-register{
+    background-color: var.$btn-bg-color;
+    display: block;
+    margin: auto;
+}

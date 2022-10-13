@@ -1,0 +1,31 @@
+@use "../setting/config" as var;
+@use "../mixin/mq" as mq;
+
+header{
+    padding: var.$header-footer-padding-tb 0;
+}
+
+.header-title {
+    font-weight: bold;
+    font-size: 24px;
+
+    @include mq.mq(){
+        text-align: center;
+    }
+}
+
+.header-left{
+    float: left;
+
+    @include mq.mq(){
+        float: none;
+    }
+}
+
+.header-right{
+    float: right;
+
+    @include mq.mq(){
+        float: none;
+    }
+}

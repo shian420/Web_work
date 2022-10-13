@@ -1,0 +1,14 @@
+@use "../mixin/modal";
+@use "../mixin/mq" as mq;
+
+#modal-overlay{
+    @include modal.modal-overlay();
+}
+
+.modal-img{
+    @include modal.modal-img();
+
+    @include mq.mq(){
+        top: 33%;
+    }
+}

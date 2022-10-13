@@ -1,0 +1,23 @@
+.course {
+  background-color: #e3fcf4;
+}
+
+.course-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .course-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+.course-item {
+  width: 30%;
+}
+@media screen and (max-width: 767px) {
+  .course-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

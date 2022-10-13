@@ -1,0 +1,22 @@
+.about-left {
+  float: left;
+  width: 48%;
+}
+@media screen and (max-width: 767px) {
+  .about-left {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.about-right {
+  float: right;
+  width: 48%;
+}
+@media screen and (max-width: 767px) {
+  .about-right {
+    float: none;
+    width: 100%;
+  }
+}

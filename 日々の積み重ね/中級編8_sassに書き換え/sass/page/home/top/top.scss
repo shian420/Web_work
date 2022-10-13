@@ -1,0 +1,34 @@
+@use "../../../setting/config" as var;
+@use "../../../mixin/mq" as mq;
+
+.top{
+    background-image: url(../img/main-vsual-nontitle.png);
+    background-size: cover;/*表示領域いっぱいに表示*/
+    padding: 80px 0;
+
+    @include mq.mq(){
+        padding: 120px 0;
+    }
+}
+
+.top-title{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: var.$top-text-aline;
+    margin-bottom: 20px;
+
+    @include mq.mq(){
+        font-size: 32px;
+    }
+}
+
+.top-subtitle{
+    font-size: 18px;
+    text-align: var.$top-text-aline;
+
+    @include mq.mq(){
+        font-size: 14px;
+    }
+}
+
+

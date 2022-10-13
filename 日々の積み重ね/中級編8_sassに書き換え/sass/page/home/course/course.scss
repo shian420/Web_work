@@ -1,0 +1,23 @@
+@use "../../../setting/config" as var;
+@use "../../../mixin/mq" as mq;
+
+.course{
+    background-color:var.$content-bg-color;
+}
+.course-wrapper{
+    display: flex;
+    justify-content: space-between;
+
+    @include mq.mq(){
+        flex-wrap: wrap;
+    }
+}
+
+.course-item{
+    width: 30%;
+
+    @include mq.mq(){
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

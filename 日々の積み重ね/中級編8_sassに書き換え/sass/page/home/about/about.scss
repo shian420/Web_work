@@ -1,0 +1,22 @@
+@use "../../../mixin/mq" as mq;
+
+.about-left{
+    float: left;
+    width: 48%;
+
+    @include mq.mq(){
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.about-right{
+    float: right;
+    width: 48%;
+
+    @include mq.mq(){
+        float: none;
+        width: 100%;
+    }
+}

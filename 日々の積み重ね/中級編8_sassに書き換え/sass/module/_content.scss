@@ -1,0 +1,34 @@
+@use "../setting/config" as var;
+@use "../mixin/mq" as mq;
+
+.container{
+    width: var.$container-width;
+    max-width: var.$container-max-width;
+    margin: auto;
+}
+
+.section{
+    padding: var.$sec-padding-tb 0;
+
+    @include mq.mq(){
+        padding: 80px 0;
+    }
+
+    @include mq.mq(){
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+.section-title{
+    font-size: var.$sec-title;
+    font-weight: bold;
+    text-align: var.$base-text-aline;
+    margin-bottom: var.$sec-margin-b;
+
+    @include mq.mq(){
+        font-size: 24px;
+        font-weight: bold;
+    }
+}

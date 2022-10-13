@@ -1,0 +1,44 @@
+//マップ型変数breakpointsを定義
+$breakpoints: (
+//キー　　値
+  'sp': 'screen and (max-width: 767px)', //767px以下（スマホ）用の表示
+  'pc': 'screen and (min-width: 768px)' //768px以上（タブレット・PC）用の表示
+) !default;
+
+// 横幅
+$container-width:90%;
+$container-max-width:980px;
+
+// 背景色
+$content-bg-color: #e3fcf4;
+$btn-bg-color:#ec6d64;
+
+// フォントスタイル
+$base-font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+// メインフォント色
+$base-font-color:rgb(0, 0, 0);
+$btn-text-color:white;
+
+// 行間
+$base-line-height:1.5;
+
+// 透過
+$base-opacity:0.7;
+
+// フォントサイズ
+$base-font-size:16px;
+$sec-title:32px;
+
+// テキストアライン
+$base-text-aline:center;
+$top-text-aline:center;
+
+// 内余白
+$sec-padding-tb:60px;
+$header-footer-padding-tb:20px;
+
+// 外余白
+$sec-margin-b:40px;
+
+
