@@ -1,0 +1,16 @@
+@use "../setting/config" as var;
+
+@mixin btn($w-btn,$h-btn,$font-size-btn) {
+    display: inline-block;
+    width: $w-btn;
+    height: $h-btn;
+    line-height: $h-btn;
+    font-size: $font-size-btn;
+    font-weight: bold;
+    text-align: center;
+    color: var.$color-btn-text;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(#000,0.16);
+    text-decoration: none;
+}
+

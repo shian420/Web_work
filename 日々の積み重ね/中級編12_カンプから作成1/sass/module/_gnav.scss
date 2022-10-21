@@ -1,0 +1,45 @@
+@use "../setting/config" as var;
+@use "../mixin/mq";
+
+.header__nav{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    @include mq.mq(){
+        display: none;
+    }
+
+        i{
+            width: 100px;
+            height: inherit;
+            a{
+                display: block;
+                color: var.$color-header-nav;
+                padding: 36px 0;
+                height: inherit;
+                text-decoration: none;
+                text-align: center;
+                position: relative;
+
+                &:hover{
+                    border-left: solid 1px rgb(0, 138, 230);
+                    border-right: solid 1px rgb(0, 138, 230);
+                    border-bottom: solid 1px rgb(0, 138, 230);
+                }
+
+                &.is-active{
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 5px;
+                        background-color: var.$color-accent;
+                    }
+                }
+            }
+        }
+    }
+

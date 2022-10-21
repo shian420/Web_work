@@ -1,0 +1,39 @@
+@use "../setting/config" as var;
+@use "../mixin/mq" as mq;
+
+.header{
+    background-color: var.$color-main;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: 0 3px 3px rgba(#000,0.16);
+
+    @include mq.mq(){
+        height: 60px;
+    }
+
+        .header__inner{
+            height: inherit;
+            display: flex;
+            align-items: center;
+
+            .header__logo{
+                width: 205px;
+
+                @include mq.mq(){
+                    width: 180px;
+                }
+
+                img{
+                    display: block;
+                }
+            }
+        }
+    }
+
+
+
+

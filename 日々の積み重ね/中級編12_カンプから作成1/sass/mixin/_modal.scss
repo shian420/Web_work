@@ -1,0 +1,21 @@
+@mixin modal-overlay() {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 19;
+    width: 100%;
+    height:100vh;
+    background-color: #949292cb;
+}
+
+@mixin modal-img(){
+    display: none;
+    position: absolute;
+    width: 80%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 0;
+    margin:auto;
+}

@@ -1,0 +1,63 @@
+@use "../../setting/config" as var;
+@use "../../mixin/mq";
+@use "../../mixin/btn";
+
+.top{
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(../img/mainvisual@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center,center;
+    position: relative;
+    margin-top: 100px;
+
+    @include mq.mq(){
+        height: calc(100vh - 60px);
+        margin-top: 60px;
+    }
+
+    .top__inner{
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+
+        .top__title{
+            font-size: 64px;
+            font-weight: bold;
+            margin-bottom: 24px;
+
+            @include mq.mq(){
+                font-size: 32px;
+                line-height: 1.3;
+            }
+        }
+        .top__subtitle{
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 36px;
+
+            @include mq.mq(){
+                font-size: 18px;
+            }
+        }
+
+        .btn{
+            background-color: var.$color-btn-main;
+            display: inline-block;
+        }
+
+        .top__btn{
+            a{
+                @include btn.btn(384px,72px,24px);
+
+                @include mq.mq(){
+                    @include btn.btn(280px,60px,24px);
+                }
+            }
+        }
+    }
+}

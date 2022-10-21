@@ -1,0 +1,114 @@
+@charset "UTF-8";
+body {
+  font-family: "游ゴシック体", "游ゴシック";
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+.inner {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .inner {
+    padding: 0 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .inner {
+    padding: 0 16px;
+  }
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .clear::after {
+    content: none;
+  }
+}
+
+.header {
+  background-color: #3F51B5;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16);
+}
+@media screen and (max-width: 767px) {
+  .header {
+    height: 60px;
+  }
+}
+.header .header__inner {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.header .header__inner .header__logo {
+  width: 205px;
+}
+@media screen and (max-width: 767px) {
+  .header .header__inner .header__logo {
+    width: 180px;
+  }
+}
+.header .header__inner .header__logo img {
+  display: block;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .header__nav {
+    display: none;
+  }
+}
+.header__nav i {
+  width: 100px;
+  height: inherit;
+}
+.header__nav i a {
+  display: block;
+  color: #fff;
+  padding: 36px 0;
+  height: inherit;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+.header__nav i a:hover {
+  border-left: solid 1px rgb(0, 138, 230);
+  border-right: solid 1px rgb(0, 138, 230);
+  border-bottom: solid 1px rgb(0, 138, 230);
+}
+.header__nav i a.is-active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #E81919;
+}

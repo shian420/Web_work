@@ -1,0 +1,46 @@
+@use "../setting/config" as var;
+@use "../mixin/mq";
+
+body{
+    font-family: var.$font-family-main;
+    font-size: var.$font-size-main;
+    line-height: var.$line-h-main;
+    background-color: var.$color-bg-main;
+    color: var.$color-text-main;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color:inherit;
+  }
+
+.inner{
+    width: var.$layout-width-inner;
+    max-width: 100%;//1200pxより小さくなったら100%
+    margin: 0 auto;
+
+    @include mq.mq(tab){
+        padding: 0 24px;
+    }
+
+    @include mq.mq(){
+        padding: 0 16px;
+    }
+}
+
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+
+    @include mq.mq(){
+        content: none;
+    }
+}
+
+
+

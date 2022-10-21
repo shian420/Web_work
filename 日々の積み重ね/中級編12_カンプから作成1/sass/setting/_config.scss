@@ -1,0 +1,35 @@
+// 色
+$color-main:#3F51B5;
+$color-accent:#E81919;
+$color-text-main:#333333;
+$color-header-nav:#fff;
+$color-btn-main:#3F51B5;
+$color-btn-text:#fff;
+
+// 背景色
+$color-bg-main:#fff;
+
+// フォントスタイル
+$font-family-main:"游ゴシック体","游ゴシック";
+
+// フォントサイズ
+$font-size-main:16px;
+
+//行間
+$line-h-main:1.6;
+
+// インナー幅
+$layout-width-inner:1200px;
+
+
+// ブレイクポイント
+//マップ型変数breakpointsを定義
+$breakpoints: (
+//キー　　値
+  'sp': 'screen and (max-width: 767px)', //767px以下（スマホ）用の表示
+  'tab': 'screen and (min-width: 768px) and (max-width: #{$layout-width-inner - 1px})',
+  'pc': 'screen and (min-width: 768px)' //768px以上（PC）用の表示
+) !default;
+
+
+
